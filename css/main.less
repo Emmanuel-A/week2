@@ -1,0 +1,88 @@
+@silver:#bdc3c7;
+@basefont: 21px;
+
+
+.square(@size){
+	width: @size;
+	height: @size;
+}
+.roundedbutton{
+	border-radius: 10px;
+	background: @silver;
+	color: #fff;
+}
+.fontstyle(@fontcolor){
+	font-family: Papyrus, fantasy;
+	font-size: @basefont;
+	color: @fontcolor;
+	font-weight: 300;
+	text-decoration: underline;
+	line-height: 42px;
+}
+
+h1{
+	font-size: @basefont * 3;
+}
+h2{
+	font-size: @basefont * 1.5;
+}
+p{
+	font-size: @basefont - 3 * 5 / 2 + 8;
+}
+body{
+	font-size: @basefont;
+	.fontstyle(#34495e); 
+}
+header{
+	background-color:darken(@silver, 19%);
+	width: 800px;
+	nav{
+		background-color:red;
+		ul{
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			li{
+				margin-right: 15px;
+				display:inline;
+				&:last-child{
+					margin-right:0px;
+				}
+				&:nth-child(2){
+					color: yellow;
+				}
+			}
+		}	
+	}
+}
+a{
+	color: #000;
+	&:hover{
+		text-decoration:none;
+	}
+}
+section{
+	width: 800px;
+	background-color: #2980b9;
+	article{
+		header{
+			width: 400px;
+			background-color: green;
+			h2{
+				font-size: 32px;
+			}
+		}
+		p{
+			button[type="submit"] {
+				.roundedbutton;
+				padding: 5px 2px;
+			}
+		}
+	}
+}
+footer{
+	.mysquare{
+		.square(45px);
+		background-color: red;
+	}
+}
