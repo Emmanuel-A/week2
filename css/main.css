@@ -1,6 +1,6 @@
 .roundedbutton {
   border-radius: 10px;
-  background: #bdc3c7;
+  background: purple;
   color: #fff;
 }
 h1 {
@@ -61,7 +61,7 @@ section article header h2 {
 }
 section article p button[type="submit"] {
   border-radius: 10px;
-  background: #bdc3c7;
+  background: purple;
   color: #fff;
   padding: 5px 2px;
 }
